@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: Optimizing the threadcount of a multithreaded Selenium web scraper
+description: I built a web scraper with Python's Selenium library to make a little over 19,000 queries on a webpage search engine.
