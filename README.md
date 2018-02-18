@@ -8,13 +8,10 @@ Given this, I wanted to see what the optimum threadcount will be to optimize the
 ### Setup
 There were a total of 19,642 search terms (i.e., queries to make). The search terms were randomly shuffled, and then evenly split into 9 groups, where each group was assigned a threadcount number: 1, 3, 5, ..., 17. The Selenium webscraper was run on each of these groups with the assigned threadcount number. Each group contained about 2,180 search terms.
 
-For control, when running the scraper, I:
-- Limited my activity on my computer to very lightweight internet browsing and PDF viewing (studying for classes)
+For control, when running the scraper, I: - Limited my activity on my computer to very lightweight internet browsing and PDF viewing (studying for classes)
 - Only used the university's internet connection
 
-##### The Scraper
-Each query/scrape involved the following:
-- Recording the time
+Each query/scrape involved the following: - Recording the time
 - Inserting the first name, last name, and clicking "search"
 - Saving the resulting html page source with BeautifulSoup in a Python dictionary object
 - Recording the time to get the scrape-time
