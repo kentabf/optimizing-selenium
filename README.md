@@ -1,3 +1,7 @@
+## 
+I built a web scraper with Python's Selenium library, I implemented it as a multithreaded scraper. This project answers the very simple question - what's the optimum threadcount?
+
+
 ### Background
 As part of my work as an economics research assistant, I had to build a web scraper to to make a over 19,000 queries on a webpage. However, I couldn't easily resort to Python's Scrapy library as the data of interest is dynamically generated with JavaScript. To keep things simple, I used the testing framework Selenium to scrape with a webdriver (PhantomJS).
 
