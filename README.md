@@ -1,5 +1,5 @@
-##  
-I built a web scraper with Python's Selenium library, I implemented it as a multithreaded scraper. This project answers the very simple question - what's the optimum threadcount?
+##  Project
+I built a web scraper with Python's Selenium library, I implemented it as a multithreaded scraper. This project answers the simple question - what's the optimum threadcount?
 
 
 ### Background
@@ -68,7 +68,7 @@ Based on this, the best threadcount seems to be anywhere in the range \[11,17]. 
 Another thing to note is that CPU temperature increased quite a bit as I increased the threadcount on the webscraper. I had to use smcFanControl and manually set the fans at the highest RPM to keep the computer cool (even with the max fans, 70 celcius when threadcount was 15/17). Considering energy consumption, then, perhaps 11 or 13 would be the optimum threadcount.
 
 ### Extra
-I could approach this more thoroughly by controlling for two things that I suspect affected the results. One is date/time of when I left the scraper running. I can't say what the web traffic looks like for the webpage I scraped, but if I could control for the date/time of the scraper, then I would have less server-side performance variation affecting the results. The second is the names that were queried for each threadcount group. Instead of splitting up the names randomly and evenly, I should have ran each threadcount group on the same set of names – although there may be some cacheing issues to consider with this.
+I could approach this more thoroughly by controlling for two things that I suspect affected the results. The first is date/time of when I left the scraper running. I can't say what the web traffic looks like for the webpage I scraped, but if I could control for the date/time of the scraper, then I would have less server-side performance variation (from traffic variation) affecting the results. The second is the names that were queried for each threadcount group. Instead of splitting up the names randomly and evenly, I can run each threadcount group on the same set of names – although there may be some cacheing issues to consider with this.
 
 
 
