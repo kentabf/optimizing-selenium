@@ -1,3 +1,3 @@
 theme: jekyll-theme-cayman
-title: Optimizing the threadcount of a multithreaded Selenium web scraper
-description: 
+title: Optimizing a Selenium web scraper
+description: Finding the optimum threadcount of a multithreaded scraper
