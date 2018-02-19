@@ -27,7 +27,7 @@ Based on the data kept track during the scrape, I was able to construct a 'relat
 ### Results
 Below is a collection of histograms, each showing the distribution of the scrapetime for a given threadcount. 
 
-![](histogram.pdf)
+![](histogram.pdf =300x200)
 
 It can be seen that the variance and scrape increases with higher threadcount. A quick summary check on Stata confirms this - both the standard deviation and mean consistently increase with higher threadcount (see below for the table, threadcount added for label). I've also attached a mean-scrapetime vs. threadcount scatter.
 
