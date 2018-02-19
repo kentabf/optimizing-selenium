@@ -1,4 +1,4 @@
-## 
+##  
 I built a web scraper with Python's Selenium library, I implemented it as a multithreaded scraper. This project answers the very simple question - what's the optimum threadcount?
 
 
