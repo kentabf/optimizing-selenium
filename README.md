@@ -26,11 +26,30 @@ Based on the data kept track during the scrape, I was able to construct a 'relat
 
 ### Results
 Below is a collection of histograms, each showing the distribution of the scrapetime for a given threadcount. 
+
 ![](histogram.pdf)
 
-It can be seen that the variance and scrape increases with higher threadcount. A quick summary check on Stata confirms this - both the standard deviation and mean consistently increase with higher threadcount (see below for the table, threadcount added for label). I've also attached a mean-scrapetime vs. threadcount scatter below.
+It can be seen that the variance and scrape increases with higher threadcount. A quick summary check on Stata confirms this - both the standard deviation and mean consistently increase with higher threadcount (see below for the table, threadcount added for label). I've also attached a mean-scrapetime vs. threadcount scatter.
+
 ![](scrapetime_stats.png)
 ![](average_scrapetime.pdf)
+
+Lastly - and most important - a scatter below of how long it took for the scraper to complete the ~2,180 queries, with the given threadcount. It levels off as the threadcount reaches 11. Some minor difference in finish time for threadcount in the range \[11,17], but most likely it's noise and nothing meaningful (Note that the number of names to search differed by at most 2 across different threadcount groups, so the difference in query size had a negligible effect.)
+
+![](finish.pdf)
+
+|threadcount|time taken (minutes)|
+|---------|---------|
+|1|146.7085|
+|3|49.56559|
+|5|30.86245|
+|7|24.88827|
+|9|20.96805|
+|11|19.76282|
+|13|20.34001|
+|15|20.60645|
+|17|19.88363|
+
 
 
 
